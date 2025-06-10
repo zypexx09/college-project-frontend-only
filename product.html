@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowrious</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <nav class="pro navbar">
+    <div class="logo">Glowrious</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="product-banner">
+    <h2>Light Up Your Space</h2>
+    <h3>Get 30% Off All Signature Candles</h3>
+  </div>
+
+  <!-- Product Section -->
+  <section class="product-section">
+    <h2 class="section-title">Our Glowrious Candles</h2>
+
+
+
+    <!--Search and Filter-->
+    <div class="search-filter-wrapper">
+      <div class="search-filter">
+        <div class="search-field">
+          <input type="text" id="searchInput" name="search" placeholder="Search candles..." />
+        </div>
+
+        <div class="product-filter">
+          <i class="fas fa-filter"></i>
+        </div>
+
+        <!-- Filter Popup Modal -->
+        <div class="filter-modal" id="filterModal">
+          <div class="wrapper">
+            <div class="price-input">
+              <div class="field">
+                <span>Min</span>
+                <input type="number" class="input-min" value="10">
+              </div>
+
+              <div class="separator">-</div>
+
+              <div class="field">
+                <span>Max</span>
+                <input type="number" class="input-max" value="10000">
+              </div>
+            </div>
+
+            <div class="slider">
+              <div class="progress"></div>
+            </div>
+
+            <div class="range-input">
+              <input type="range" class="range-min" min="0" max="10000" value="0" step="100">
+              <input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--product gird-->
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card" onclick="window.location.href='prodctDetails.html';">
+        <img src="assets/candle-1.jpeg" alt="Warm Vanilla Candle">
+        <div class="product-desc">
+          <h3>Warm Vanilla</h3>
+          <p>Rs. 1500</p>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="assets/candle-2.png" alt="Lavender Bliss">
+        <div class="product-desc">
+          <h3>Lavender Bliss</h3>
+          <p>Rs. 1500</p>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="assets/candle-3.jpeg" alt="Rose Garden">
+        <div class="product-desc">
+          <h3>Rose Garden</h3>
+          <p>Rs. 1500</p>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="assets/candle-4.png" alt="Citrus Burst">
+        <div class="product-desc">
+          <h3>Citrus Burst</h3>
+          <p>Rs. 1500</p>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="assets/candle-5.png" alt="Ocean Breeze">
+        <div class="product-desc">
+          <h3>Ocean Breeze</h3>
+          <p>Rs. 1500</p>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="assets/candle-6.png" alt="Amber Musk">
+        <div class="product-desc">
+          <h3>Amber Musk</h3>
+          <p>Rs. 1500</p>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img src="assets/candle-4.png" alt="Jasmine Dream">
+        <div class="product-desc">
+          <h3>Jasmine Dream</h3>
+          <p>Rs. 1500</p>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img src="assets/candle-2.png" alt="Eucalyptus Calm">
+        <div class="product-desc">
+          <h3>Eucalyptus Calm</h3>
+          <p>Rs. 1500</p>
+        </div>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product-card">
+        <img src="assets/candle-2.png" alt="Eucalyptus Calm">
+        <div class="product-desc">
+          <h3>Eucalyptus Calm</h3>
+          <p>Rs. 1500</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Pagination-->
+
+  <nav class="pagination">
+    <a href="#" class="active" aria-current="page">1</a>
+    <a href="#">2</a>
+    <a href="#">
+      <span><i class="ri-arrow-right-long-line"></i></span>
+    </a>
+  </nav>
+
+  <!--footer-->
+  <footer class="glowrious-footer">
+    <div class="col column-one">
+      <img class="logo" src="assets/logo.png">
+      <div class="info">
+        <h4 class="contact-head">Contact</h4>
+        <p><strong>Address:</strong> Patan Durbar Square, Lalitpur 44700, Nepal</p>
+        <p><strong>Phone:</strong> +977-1-5541234 / +977-9801234567</p>
+        <p><strong>Hours:</strong> 10:00 AM – 6:00 PM, Sunday – Friday</p>
+
+
+
+        <div class="socials">
+          <h4>Follow us</h4>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col column-two">
+      <h4>About us</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col column-three">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track my Order</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2025 Glowrious. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
